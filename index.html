@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Upload</title>
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+		}
+		.bg-img {
+			background-image: url("1.jpg");
+			background-position: center top;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			min-height: 100%;
+		}
+	</style>
+</head>
+<body id="container" class="bg-img">
+
+
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easybg.js"></script>	
+	<script>
+		$(window).load(function(){
+			$('#container').easybg({
+				images: [
+					'img/1.jpg', 
+					'img/2.jpg', 
+					'img/3.jpg', 
+					'img/4.jpg',
+					'img/5.jpg'
+				],
+				interval: 3000, //3 second
+				//speed : 1000, // 1 minute
+				ignoreError : false,
+				changeMode : 'normal',
+				initIndex : 0, 
+				cloneClassId : null,
+				cloneClassName : 'easybgClone',
+				debug : false
+			});
+		});
+	</script>
+</body>
+</html>
